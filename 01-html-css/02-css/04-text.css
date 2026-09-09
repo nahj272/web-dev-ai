@@ -1,0 +1,39 @@
+/* font-family : 앞에 있는 글꼴 사용, 없으면 다음 글꼴 */
+.ff-sans{ font-family: "돋움",  sans-serif;}
+.ff-serif{ font-family: "궁서", serif;}
+.ff-web{font-family: "Dongle", sans-serif;}
+
+/* font-size : 기본-16px */
+ /* 기본(16px)*2(배) */
+.fs-px{font-size: 20px;}
+.fs-rem{font-size: 1.5rem;}
+
+/* font-weight bold=숫자700 */
+.fw-bold{font-weight: bold;}
+.fw-thin{font-weight: 300;}
+
+/* line-height: 1.5~1.8 */
+.lh{line-height: 1.6;}
+
+/* text-align : left(기본), center, right, justify */
+.ta-center{text-align: center;}
+.ta-right{text-align: right;}
+
+/* color */
+/* 브라우저가 인식하는 기본 색상명 (Web Safe Colors 216가지) */
+/* hex(16진수) : #RRGGBB - 범위 : 000000~ffffff */
+/* rgb : red(0~255), green(0~255), blue(0~255) + alpha(투명도, 0~1) */
+/* hsl : 색상환(0~360), 채도(0~100%),밝기(0~100%) */
+.c-name{color: crimson;}
+.c-hex{color: #2f6fed;}
+.c-rgb{color: rgb(47, 111, 237); background: rgba(0, 0, 0, 0.5);}
+.c-hsl{color: hsla(200, 50%, 50%, 0.2);}
+
+/* text-decoration */
+.td-underline{text-decoration: underline;}
+.td-none{text-decoration: none;}
+
+/* letter-spacing : 글자 사이 간격 / text-shadow : 글자의 그림자 */
+/* text-shadow: x축px y축px 블러px */
+.ls{letter-spacing: 20px;}
+.shadow{text-shadow: 2px 2px 2px red;}

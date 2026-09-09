@@ -1,0 +1,12 @@
+h1{font-family: "Gamja Flower", sans-serif; 
+    font-size: 36px; text-align: center; }
+h2{font-size: medium;
+    font-weight: thin; color: rgba(0, 0, 0, 50%); 
+    text-align: center;}
+
+.week{color: green; font-weight: bold;}
+.today{color: black;}
+span{font-weight: bold;}
+.caution{font-size: small; color: rgba(0, 0, 0, 50%);}
+.ta-center{text-align: center;color: rgba(0, 0, 0, 50%);}
+.ask{color: green;}
