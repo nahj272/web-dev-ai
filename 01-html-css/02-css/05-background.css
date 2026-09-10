@@ -1,0 +1,45 @@
+/* background-color : 배경색 하나 (-color 생략 가능) */
+/* background-image : 배경 이미지 */
+/* background-repeat + position */
+/* background-size 
+    - cover : 비율 유지하며 영역을 꽉 채움 (넘치는 부분 잘림)
+    - contain : 비율 유지하며 사진이 다 보이게 (빈 공간 생김) */
+/* background=attachment:fixed - 배경을 화면에 고정 (필요에 의해 */
+/* gradient : 색이 서서히 바뀌는 것 
+    - linear-gradient : 각도, 컬러; 
+    - radial-gradient : 모양, 컬러 */
+/* overlay : background-image에서 콤마로 나열 */
+/* background-blend-mode : background-color + background-image */
+/* background(축약형) : color image repeat position / size */
+
+    .box{ height: 200px;}
+.bg-color{background-color: blue;}
+.pic{background-image: url(../assets/panda.png);}
+.bg-norepeat
+{background-repeat: no-repeat;
+background-position: center;
+background-color: #333;}
+
+.bg-cover
+{background-size: contain;
+background-position: center;
+background-repeat: no-repeat;}
+
+.bg-fixed{background-attachment: fixed;}
+
+.bg-gradient
+{background-image: linear-gradient(135deg, red, blue) ;
+background-image: radial-gradient(circle, red, blue, yellow);}
+
+.bg-overlay
+{background-image: linear-gradient(rgb(0 0 0 / 0.45), rgb(0 0 0 / 0.45)), 
+    url("../assets/panda.png");}
+
+.bg-blend
+{background-color: rgb(0 0 0 / 0.45);
+background-image: url(../assets/panda.png);
+background-blend-mode: overlay;}
+
+.bg
+{background: #333 url(../assets/panda.png) no-repeat center / contain}
+
