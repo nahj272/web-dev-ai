@@ -2,7 +2,9 @@ html
 {background-color: rgb(0 0 0 / 0.35); 
 background-image: url(../assets/bg.jpg);
 background-blend-mode: overlay;
-background-size: cover;}
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;}
 
 body{text-align: center; color: white;}
 
