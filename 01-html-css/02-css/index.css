@@ -1,0 +1,16 @@
+:root{--primary-navy: #2c4e78;}
+
+header
+{width: 100%; height: 60px;
+position: fixed;
+background-color: var(--primary-navy) ;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;}
+
+
+.header-left
+{display: flex;}
+
+main{padding-top: 60px;}

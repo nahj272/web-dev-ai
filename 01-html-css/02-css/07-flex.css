@@ -1,0 +1,73 @@
+/* display: flex를 반드시 부모한테!! */
+
+.container
+{background-color: #eef1f5;
+display: flex;}
+
+.item
+{padding: 10px 15px;
+border: 2px solid;
+background-color: white;}
+
+/* flex-ditrection
+    - row : 기본값
+    - row-reverse : 왼쪽부터
+    - column 
+    - column-reverse : 아래부터 */
+
+.column{flex-direction: column;}
+
+/* 부모한테, justify-content, lign items 
+    - start(기본값), end, center
+    - space-between(양끝), around, evenly*/
+
+/* flex-direction에 따라서 주축과 교차축이 바뀜 */
+
+/* align-items
+    -stretchy(기본값), start, end, center, baseline */
+
+.align
+{height: 200px;
+flex-direction: column;
+justify-content: space-between; /* 주축 */
+align-items: center;} /* 교차축 */
+ 
+/* flex-wrap 
+    -nowrap(기본값 - 찌그러트림), wrap */
+
+/* align-conten는 줄바꿈 사용
+    - justify-content에서 사용하는 값들 동일 */
+.wrap
+{height: 200px;
+flex-wrap: wrap;
+justify-content: space-between;
+align-content: space-around;}
+
+.wrap .item
+{width: 150px;}
+
+/* gap */
+.gap {gap: 10px;} /* margin과의 차이점은 바깥쪽 여백이 안 생김 */
+
+
+/* ------------자식한테 주는 속성들------------ */
+
+.grow-1{flex-grow: 1;}
+.grow-2{flex-grow: 2;}
+
+.shrink .item
+{flex-basis: 300px;}
+
+.shrink-0{flex-shrink: 0;}
+
+.flex-1{flex: 1 1 0;} /* 아이템을 균등하게 */
+
+.order-self
+{height: 200px;
+align-items: center;}
+
+.order
+{order: -1;} /* 기본값이 0, 작을수록 앞으로 */
+
+.self
+{align-self: end;}

@@ -1,40 +1,59 @@
-body{font-family:'Segoe UI';
-     text-align: center; 
-     height: 100vh;
-    color: white;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
 
-html
-{background-image: linear-gradient(145deg, aqua, lightgreen) ;}
+body
+{font-family:'Segoe UI';
+text-align: center; 
+height: 100vh;
+color: white;
+background-image: linear-gradient(145deg, aqua, lightgreen);
+padding-top: 30px;}
+
+.box1
+{width: 300px; height: 350px;
+border: 0.1px solid rgba(255, 255, 255, 0.5); 
+border-radius: 16px;
+background-color: rgba(255, 255, 255, 0.3);
+padding: 25px;
+margin: auto;
+text-align: center;}
+/* text-align: center; */
+/* margin: auto; 해당 요소가 가로 크기를 가지고 있으면 균등하게 여백 지정 */
 
 .pic
 {background-image: url(../assets/panda.png);
-width: 50px;
-height: 50px;
-margin-top:20px;
-background-size: cover;
 border: 1px solid white;
 border-radius: 50px;
-background-repeat: no-repeat;
-position: relative;
-top: 10px; left: 180px;
+width: 50px;
+height: 50px;
+margin: auto;
+margin-bottom: 10px;
+background-size: cover;
 background-position: center;}
+/* background-repeat: no-repeat;
+position: relative;
+top: 10px; left: 180px;} */
 
-.box1
-{width: 400px;
-border: 0.1px solid white; 
-border-radius: 16px;
-margin: auto;}
 
 .underline
 {margin:auto;
 width: 70%;
-border-bottom: 0.1px solid white;}
+border-bottom: 0.1px solid white;
+padding-bottom: 10px;
+margin-bottom: 10px;}
 
 .paty
 {color: lemonchiffon; 
 font-weight: bold;}
 
-.you
+a
+{display: block;
+text-decoration: none;
+color: inherit;}
+
+
+
+
+/* .you
 {padding: 10px 20px; 
 background-color: white; 
 margin: 10px 30px; 
@@ -46,4 +65,4 @@ color: black;}
 margin: 10px 30px 30px; 
 display: block;
 border: 0.1px solid white;
-border-radius: 10px;}
+border-radius: 10px;} */

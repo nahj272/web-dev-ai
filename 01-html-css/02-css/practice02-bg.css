@@ -4,7 +4,8 @@ background-image: url(../assets/bg.jpg);
 background-blend-mode: overlay;
 background-size: cover;
 background-repeat: no-repeat;
-background-attachment: fixed;}
+background-attachment: fixed;
+background-position: center;}
 
 body{text-align: center; color: white;}
 p{color: wheat;}
