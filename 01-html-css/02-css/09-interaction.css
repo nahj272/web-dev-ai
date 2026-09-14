@@ -1,0 +1,79 @@
+.container
+{display: flex;
+gap: 10px;
+border: 1px solid #eee;}
+
+.box
+{width: 140px; height: 140px;
+background: #333;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+font-size: 1.2rem;}
+
+/* Trensition */
+
+.transition 
+/* property duration timing-function 
+    적용대상 지속시간  변화 속도 - linear 일정하게 */
+{transition: all 30s linear;}
+
+.transition:Hover
+{background: #ffa114;
+cursor: pointer; /* 손모양 표시 */}
+
+
+/* Transform 
+    - 요소를 확대(배수)/회전(각도deg)/이동/기울이기 
+
+    - scale : 확대(배수)
+    - rotate : 회전(각도deg) 
+    - translate : 이동(x,y,z축)
+    - skew : 비틀기 */
+.scale{background-color: indianred;}
+.scale:hover
+{transform: scale(1.2);}
+
+.rotate{background: indigo;}
+.rotate:hover
+{transform: rotate(30deg);}
+
+.translate{background: cadetblue;}
+.translate:hover
+{transform: translate(20px, 50px);}
+
+.skew:hover
+{transform: skew(10deg, -30deg);}
+
+/* Animation -@keyframes로 여러 단계를 지정 
+    @keyframes 애니메이션 이름 */
+
+@keyframes bounce
+{0%{transform: translateY(0);} 
+50%{transform: translateY(-50px);} 
+100%{transform: translateY(0);}}
+
+/* {name.duration.timing-function.iteraction-count }
+{애니메이션 이름.지속 시간.속도 변화.반복 횟수 */
+.ani-once{animation: bounce 2s linear 2;}
+.ani-loop
+{background: navy;
+animation: bounce 2s linear infinite;}
+
+.ani-pause 
+{background: salmon;
+    animation: bounce 2s linear infinite;}
+.ani-pause:hover
+{animation-play-state: paused;}
+
+/* 원근거리 - 값이 작을수록 더 입체적으로 */
+.perspective{perspective: 200px;}
+
+.p-3d
+{background: seagreen;
+transform-style: preserve-3d;
+transition: transform 2s;}
+.p-3d:hover
+{transform: rotateY(180deg);}
