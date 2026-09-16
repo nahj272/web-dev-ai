@@ -7,6 +7,7 @@
   </head>
   <body>
     <h1>조건문</h1>
+    <h6>검사>console 확인</h6>
     <h2>if / else</h2>
     <script>
       /* if(조건) {조건이 true} 
@@ -74,6 +75,35 @@
       {case 0: console.log("짝수"); break;
        case 1: console.log("홀수"); break;
        default: console.log("숫자가 아니다");}
+    </script>
+
+    <h2>중첩 if</h2>
+    <script>
+      // 아이디가 user1, 비밀번호가 1234인 경우만 "로그인 성공"
+      // 비밀번호가 틀리면 "비밀번호가 틀렸습니다"
+      // 아이디가 틀리면 "아이디를 잘못 입력하셨습니다"
+      const id = 'user1';
+      const pw = '1234';
+      
+      // if (id !== 'user1')
+      // {console.log('아이디를 잘못 입력하셨습니다.');}
+      // else if (pw !== '1234') 
+      // {console. log('비밀번호가 틀렸습니다')}
+  
+      
+      // 효율적으로 코드를 짜는 방법 중에 오히려 잘못된 경우들을 먼저 씀
+      if (id !== 'user1')
+      {console.log('아이디을 잘못 입력하셨습니다')}
+      else if (pw !== "1234")
+      {console.log('비밀번호가 틀렸습니다.')}
+
+
+      //명확하게 짤거면 중첩 if
+        if(id === 'user1') // 아이디가 맞는 경우 
+        {if(pw === '1234') //비밀 번호가 맞는 경우
+        {console.log('로그인 성공');}
+            else{console.log('비밀번호가 틀렸습니다');}}
+            else{console.log('아이디를 잘못 입력하셨습니다');}
     </script>
   </body>
 </html>

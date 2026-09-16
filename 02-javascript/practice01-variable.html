@@ -21,8 +21,7 @@
         <script>
           // 여기에 코드 작성
             const kg = 30;
-            const lb = kg*2.2;
-            console.log(lb);
+            console.log(kg*2.2);
         </script>
       </li>
 
@@ -31,8 +30,7 @@
         <script>
           // 여기에 코드 작성
             const m2 = 2;
-            const sqm = m2*0.3;
-            console.log(sqm);
+            console.log(m2*0.3);
         </script>
       </li>
 
@@ -40,11 +38,10 @@
         사다리꼴의 넓이를 구하시오. (윗변 + 밑변) / 2 * 높이
         <script>
           // 여기에 코드 작성
-          const num1 = 4;
-          const num2 = 8;
-          const num3 = 9;
-        console.log((num1 + num2) / 2 * num3);
-            
+          const up = 4;
+          const down = 8;
+          const height = 9;
+        console.log((up + down) / 2 * height);
         </script>
       </li>
 
@@ -54,7 +51,9 @@
           // 여기에 코드 작성
           const won = 12000000;
           const per = 0.04;
-          console.log( won * per / 12);
+          const mon = (won * per) / 12;
+          console.log(mon)
+          // console.log( won * per / 12);
         </script>
       </li>
 
@@ -62,10 +61,15 @@
         아이스 아메리카노 한 잔 5,500원, 가진 돈이 15,000원일 때 최대 몇 잔, 잔돈은 얼마?
         <script>
           // 여기에 코드 작성
+          // parseInt(정수) 유사한 Math.floor(내림)
           const money = 15000;
           const cup = 5500;
-          console.log(parseInt(money / cup));
-          console.log(money % cup);
+          // console.log(parseInt(money / cup));
+          // console.log(money % cup);
+          const cups =  Math.floor (money / cup);
+          const change = money % cup;
+          console.log(`최대 ${Math.floor (money / cup)}잔, 잔돈은 ${change}원`)
+          
         </script>
       </li>
 
@@ -83,9 +87,9 @@
         이름, 나이, 취미를 변수로 저장한 후 소개 문장을 console에 출력하시오.
         <script>
           // 여기에 코드 작성
-             const name = '나혜진'
-             const age = '32세'
-             const hobby = '애니보기'
+          const name = '나혜진'
+          const age = '32세'
+          const hobby = '애니보기'
           console.log(`내 이름은 ${name}이고, 나이는 ${age} 입니다. 제 취미는 ${hobby}입니다.`)
         </script>
       </li>
@@ -95,7 +99,7 @@
         <script>
           // 여기에 코드 작성
           const nickname = "annie";
-          console.log(nickname.length)
+          console.log(`${nickname}님의 닉네임은 ${nickname.length}글자입니다`)
 
         </script>
       </li>
