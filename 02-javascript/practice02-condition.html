@@ -14,7 +14,8 @@
           // 여기에 코드 작성
           const id = 'admin'
           if(id === 'admin') {console.log('관리자입니다')}
-          else{console.log('관리자가 아닙니다')}
+           else{console.log('관리자가 아닙니다')}
+         
         </script>
       </li>
 
@@ -24,7 +25,7 @@
           // 여기에 코드 작성
           const testW = 80; 
           const testS = 49;
-        if((testW >= 80) && (testS >= 80))
+        if(testW >= 80 && testS >= 80)
         {console.log('합격');}
         else{console.log('불합격');}
         </script>
@@ -35,7 +36,7 @@
         <script>
           // 여기에 코드 작성
           const age = 8;
-          if((age >= 65) || (age < 8))
+          if(age >= 65 || age < 8)
           {console.log('무료');}
           else{console.log('10,000원');}
 
@@ -47,13 +48,22 @@
         <script>
           // 여기에 코드 작성
           const ss = 12;
-
-          if(ss >= 3 && ss <= 5 ) {console.log('봄');}
-          if(ss >= 6 && ss <= 8 ) {console.log('여름');}
-          if(ss >= 9 && ss <= 11 ) {console.log('가을');}
-          if(ss < 3 || ss === 12 ) {console.log('겨울');}
-
-
+          // if(ss === 3 || ss === 4 || ss === 5) {console.log('봄');}
+          // if(ss >= 3 && ss <= 5 ) {console.log('봄');}
+          // if(ss >= 6 && ss <= 8 ) {console.log('여름');}
+          // if(ss >= 9 && ss <= 11 ) {console.log('가을');}
+          // if(ss < 3 || ss === 12 ) {console.log('겨울');}
+        let result = '잘못 입력하셨습니다.'
+        if(ss >= 3 && ss <= 5 ) {result = '봄';}
+          else if(ss >= 6 && ss <= 8 ) {result = '여름';}
+          else if(ss >= 9 && ss <= 11 ) {result = '가을';}
+          else if(ss < 3 || ss === 12 ) {result = '겨울'}
+        console.log(result);
+      
+        // swich(ss) 
+        // {case 3: case 4: case 5: result = '봄' break;
+        // case 6: case 7: case 8: result = '여름 break'; }
+      
         </script>
       </li>
 
@@ -97,21 +107,13 @@
         정수 하나가 3의 배수인지, 5의 배수인지, 둘 다인지, 아니면 어떤 것도 아닌지 판별하시오.
         <script>
           // 여기에 코드 작성
-            const na = 34;
-
-            if (na % 3 === 0) {// 3의 배수인 경우 if(na % 5 === 0)
-            if(na % 5 === 0) {
-                console.log('3의 배수이면서 5의 배수 입니다')
-              } else {
-                 console.log('3의 배수 입니다')
-              }
-            } else {
-              // 3의 배수가 아닌 경우
-              if(na % 5 === 0) {
-                console.log('5의 배수 입니다')
-              } else {
-                console.log('둘다 아닙니다')
-              }}
+          const na = 34;
+          if (na % 3 === 0) {// 3의 배수인 경우 if(na % 5 === 0)
+          if (na % 5 === 0) {console.log('3의 배수이면서 5의 배수 입니다')}  // '둘다 입니다'
+          else {console.log('3의 배수 입니다')}} 
+          else {// 3의 배수가 아닌 경우 
+          if(na % 5 === 0) {console.log('5의 배수 입니다')} 
+          else {console.log('둘다 아닙니다')}}
         </script>
       </li>
     </ol>
